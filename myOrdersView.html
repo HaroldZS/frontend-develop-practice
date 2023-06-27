@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --background-color: #121b2e;
+        --text-color: #e0e8f0;
+        --accent-color: #448aff;
+        --secondary-color: #607d8b;
+        --highlight-color: #ff9800;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        background-color: var(--background-color);
+      }
+      .my-order {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .title {
+        font-size: var(--lg);
+        color: var(--text-color);
+        margin-bottom: 40px;
+      }
+      .my-order-container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 300px;
+      }
+      .my-order-content {
+        display: flex;
+        flex-direction: column;
+      }
+      .order {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .order p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+      }
+      .order p span:nth-child(1) {
+        font-size: var(--md);
+        color: var(--text-color);
+        font-weight: bold;
+      }
+      .order p span:nth-child(2) {
+        font-size: var(--sm);
+        color: var(--secondary-color);
+        font-weight: bold;
+      }
+      .order p:nth-child(2) {
+        text-align: end;
+        font-weight: bold;
+        color: var(--text-color);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-order">
+      <div class="my-order-container">
+        <h1 class="title">My orders</h1>
+
+        <div class="my-order-content">
+          <div class="order">
+            <p>
+              <span>06.27.23</span>
+              <span>6 articles</span>
+            </p>
+            <p>$ 560.00</p>
+            <img src="./icons/flechita.svg" alt="arrow" />
+          </div>
+
+          <div class="order">
+            <p>
+              <span>06.28.23</span>
+              <span>5 articles</span>
+            </p>
+            <p>$ 310.00</p>
+            <img src="./icons/flechita.svg" alt="arrow" />
+          </div>
+
+          <div class="order">
+            <p>
+              <span>07.01.23</span>
+              <span>6 articles</span>
+            </p>
+            <p>$ 420.00</p>
+            <img src="./icons/flechita.svg" alt="arrow" />
+          </div>
+
+          <div class="order">
+            <p>
+              <span>07.09.23</span>
+              <span>9 articles</span>
+            </p>
+            <p>$ 1230.00</p>
+            <img src="./icons/flechita.svg" alt="arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
