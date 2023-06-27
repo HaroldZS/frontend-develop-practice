@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --background-color: #121b2e;
+        --text-color: #e0e8f0;
+        --accent-color: #448aff;
+        --secondary-color: #607d8b;
+        --highlight-color: #ff9800;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        background-color: var(--background-color);
+      }
+      .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 26px;
+        place-content: center;
+      }
+      .product-card {
+        width: 240px;
+      }
+      .product-card img {
+        width: 240px;
+        height: 240px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .product-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 12px;
+      }
+      .product-info figure{
+        margin: 0;
+      }
+      .product-info figure img {
+        width: 35px;
+        height: 35px;
+      }
+      .product-info div p:nth-child(1){
+        font-weight: bold;
+        font-size: var(--md);
+        color: var(--text-color);
+        margin-top: 0;
+        margin-bottom: 4px;
+      }
+      .product-info div p:nth-child(2){
+        font-size: var(--sm);
+        color: var(--secondary-color);
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      @media (max-width: 640px){
+        .cards-container {
+        grid-template-columns: repeat(auto-fill, 140px);
+      }
+      .product-card {
+        width: 140px;
+      }
+      .product-card img {
+        width: 140px;
+        height: 140px;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="main-container">
+      <div class="cards-container">
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/6312355/pexels-photo-6312355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>120,00</p>
+              <p>Modern kitchen</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/7031868/pexels-photo-7031868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>120,00</p>
+              <p>Beige kitchen</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/7511700/pexels-photo-7511700.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>120,00</p>
+              <p>Black kitchen</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img
+            src="https://images.pexels.com/photos/3935350/pexels-photo-3935350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+          />
+          <div class="product-info">
+            <div>
+              <p>120,00</p>
+              <p>Spacious kitchen</p>
+            </div>
+            <figure>
+              <img src="./icons/bt_add_to_cart.svg" alt="" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="product-card">
+            <img
+              src="https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <div class="product-info">
+              <div>
+                <p>120,00</p>
+                <p>White kitchen</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <div class="product-info">
+              <div>
+                <p>120,00</p>
+                <p>Yellow kitchen</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://images.pexels.com/photos/3623785/pexels-photo-3623785.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <div class="product-info">
+              <div>
+                <p>120,00</p>
+                <p>White iron kitchen</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://images.pexels.com/photos/5824883/pexels-photo-5824883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <div class="product-info">
+              <div>
+                <p>120,00</p>
+                <p>Cozy kitchen</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="" />
+              </figure>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img
+              src="https://images.pexels.com/photos/280232/pexels-photo-280232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <div class="product-info">
+              <div>
+                <p>120,00</p>
+                <p>Kinder kitchen</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://images.pexels.com/photos/276554/pexels-photo-276554.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <div class="product-info">
+              <div>
+                <p>120,00</p>
+                <p>Capacious kitchen</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <div class="product-info">
+              <div>
+                <p>120,00</p>
+                <p>Wooden kitchen</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="" />
+              </figure>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <img
+              src="https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <div class="product-info">
+              <div>
+                <p>120,00</p>
+                <p>Designed kitchen</p>
+              </div>
+              <figure>
+                <img src="./icons/bt_add_to_cart.svg" alt="" />
+              </figure>
+            </div>
+          </div>
+
+      </div>
+    </section>
+  </body>
+</html>
