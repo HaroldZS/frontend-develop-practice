@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --background-color: #121b2e;
+        --text-color: #e0e8f0;
+        --accent-color: #448aff;
+        --secondary-color: #607d8b;
+        --highlight-color: #ff9800;
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+      }
+      body {
+        margin: 0;
+        font-family: "Quicksand", sans-serif;
+        background-color: var(--background-color);
+      }
+      .product-detail {
+        width: 360px;
+        padding: 24px;
+        box-sizing: border-box;
+        position: absolute;
+        right: 0;
+      }
+      .title-container {
+        display: flex;
+        margin-bottom: 24px;
+      }
+      .title-container img {
+        transform: rotate(180deg);
+        margin-right: 14px;
+      }
+      .title {
+        font-size: var(--lg);
+        font-weight: bold;
+        color: var(--text-color);
+      }
+      .order {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 16px;
+        align-items: center;
+        background-color: var(--secondary-color);
+        margin-bottom: 24px;
+        border-radius: 8px;
+        padding: 0 24px;
+      }
+      .order p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+      }
+      .order p span:nth-child(1) {
+        font-size: var(--md);
+        color: var(--background-color);
+        font-weight: bold;
+      }
+      .order p:nth-child(2) {
+        text-align: end;
+        font-weight: bold;
+      }
+      .shopping-cart figure {
+        margin: 0;
+      }
+      .shopping-cart figure img {
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+      .shopping-cart p:nth-child(2) {
+        color: var(--secondary-color);
+      }
+      .shopping-cart p:nth-child(3) {
+        font-size: var(--md);
+        font-weight: bold;
+        color: var(--text-color);
+      }
+      .shopping-cart {
+        display: grid;
+        grid-template-columns: auto 1fr auto auto;
+        gap: 16px;
+        margin-bottom: 24px;
+        align-items: center;
+      }
+      .primary-button {
+        background-color: var(--highlight-color);
+        border-radius: 8px;
+        border: none;
+        color: var(--text-color);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: 50px;
+      }
+      @media (max-width: 640px) {
+        .product-detail {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="product-detail">
+      <div class="title-container">
+        <img src="./icons/flechita.svg" alt="arrow" />
+        <p class="title">Shopping cart</p>
+      </div>
+      <div class="my-order-content">
+        <div class="shopping-cart">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/6312355/pexels-photo-6312355.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </figure>
+          <p>Modern kitchen</p>
+          <p>$ 120.00</p>
+          <img src="./icons/icon_close.png" alt="close" />
+        </div>
+
+        <div class="shopping-cart">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/7031868/pexels-photo-7031868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </figure>
+          <p>Beige kitchen</p>
+          <p>$ 150.00</p>
+          <img src="./icons/icon_close.png" alt="close" />
+        </div>
+
+        <div class="shopping-cart">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/3935350/pexels-photo-3935350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </figure>
+          <p>Spacious kitchen</p>
+          <p>$ 170.00</p>
+          <img src="./icons/icon_close.png" alt="close" />
+        </div>
+
+        <div class="shopping-cart">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </figure>
+          <p>White kitchen</p>
+          <p>$ 120.00</p>
+          <img src="./icons/icon_close.png" alt="close" />
+        </div>
+
+        <div class="shopping-cart">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/2089698/pexels-photo-2089698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </figure>
+          <p>Yellow kitchen</p>
+          <p>$ 190.00</p>
+          <img src="./icons/icon_close.png" alt="close" />
+        </div>
+
+        <div class="shopping-cart">
+          <figure>
+            <img
+              src="https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+          </figure>
+          <p>Designed kitchen</p>
+          <p>$ 390.00</p>
+          <img src="./icons/icon_close.png" alt="close" />
+        </div>
+        <div class="order">
+          <p>
+            <span>Total</span>
+          </p>
+          <p>$ 560.00</p>
+        </div>
+
+        <button class="primary-button add-to-cart-button">checkout</button>
+      </div>
+    </aside>
+  </body>
+</html>
