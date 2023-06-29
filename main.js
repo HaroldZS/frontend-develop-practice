@@ -5,26 +5,39 @@ const cartMenu = document.querySelector(".navbar-shopping-cart");
 const mobileMenu = document.querySelector(".mobile-menu");
 const cartDetail = document.querySelector(".cart-detail");
 const cardsContainer = document.querySelector(".cards-container");
+const productDetail = document.querySelector(".product-detail");
+const productDetailClose = document.querySelector(".product-detail-close");
 
 menuEmail.addEventListener("click", toggleDesktopMenu);
 toggleMenu.addEventListener("click", toggleMobileMenu);
 cartMenu.addEventListener("click", toggleAsideCart);
+productDetailClose.addEventListener("click", closeAsideProuctDetail);
 
 renderProducts(products);
 
 function toggleDesktopMenu() {
   desktopMenu.classList.toggle("inactive");
-  addInactive(cartDetail, mobileMenu);
+  addInactive(cartDetail, mobileMenu, productDetail);
 }
 
 function toggleMobileMenu() {
   mobileMenu.classList.toggle("inactive");
-  addInactive(cartDetail, desktopMenu);
+  addInactive(cartDetail, desktopMenu, productDetail);
 }
 
 function toggleAsideCart() {
   cartDetail.classList.toggle("inactive");
-  addInactive(mobileMenu, desktopMenu);
+  addInactive(mobileMenu, desktopMenu, productDetail);
+}
+
+function openAsideProuctDetail() {
+  productDetail.classList.remove("inactive");
+  addInactive(cartDetail, mobileMenu, desktopMenu);
+}
+
+function closeAsideProuctDetail() {
+  productDetail.classList.add("inactive");
+  addInactive(cartDetail, mobileMenu, desktopMenu);
 }
 
 function addInactive(...elements) {
@@ -40,6 +53,8 @@ function renderProducts(productsArray) {
 
     const productImg = document.createElement("img");
     productImg.setAttribute("src", element.image);
+
+    productImg.addEventListener("click", openAsideProuctDetail);
 
     const productInfo = document.createElement("div");
     productInfo.classList.add("product-info");
