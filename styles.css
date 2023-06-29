@@ -1,3 +1,4 @@
+/* Generad */
 :root {
   --background-color: #121b2e;
   --text-color: #e0e8f0;
@@ -16,6 +17,8 @@ body {
 .inactive {
   display: none;
 }
+
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -80,6 +83,8 @@ nav {
   align-items: center;
 }
 
+/* Desktop menu */
+
 .desktop-menu {
   position: absolute;
   top: 60px;
@@ -117,6 +122,43 @@ nav {
   display: inline-block;
 }
 
+/* Mobile menu */
+.mobile-menu {
+  position: absolute;
+  top: 60px;
+  padding: 24px;
+}
+.mobile-menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  /* margin-bottom: 24px; */
+}
+
+.mobile-menu ul {
+  padding: 0;
+  margin: 24px 0 0;
+  list-style: none;
+}
+.mobile-menu ul:nth-child(1) {
+  border-bottom: 1px solid var(--highlight-color);
+}
+.mobile-menu ul li {
+  margin-bottom: 24px;
+}
+.mobile-menu .email {
+  font-size: var(--sm);
+  font-weight: 300;
+  color: var(--secondary-color);
+}
+.mobile-menu .sign-out {
+  font-size: var(--sm);
+  color: var(--highlight-color);
+}
+.mobile-menu ul:last-child {
+  bottom: 0;
+}
+
 @media (max-width: 640px) {
   .menu {
     display: block;
@@ -125,6 +167,15 @@ nav {
     display: none;
   }
   .navbar-email {
+    display: none;
+  }
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .mobile-menu {
     display: none;
   }
 }
